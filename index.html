@@ -18,5 +18,34 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 
+
+<script>
+  
+  
+window.addEventListener("message",function(event){
+  if(event.data.name==="videoEnd"){
+  console.log("videoEnd",event);
+  }
+  elseif(event.data.name==="tagClick"){
+  console.log("tagClick",event);
+  }
+  elseif(event.data.name==="showWidget"){
+  console.log("showWidget",event);
+  }
+  elseif(event.data.name==="widgetClosed"){
+  console.log("widgetClosed",event);
+  }
+  elseif(event.data.name==="videoClick"){
+  console.log("videoClick",event);
+  }
+  elseif(event.data.name==="hasPaused"){
+  console.log("hasPaused",event);
+  }
+  elseif(event.data.name==="hasPlayed"){
+  console.log("hasPlayed",event);
+  }
+  
+}, false);
+</script>
 </body>
 </html>
